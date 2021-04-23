@@ -10,20 +10,20 @@
           "Deleted":true,
           "Id":19,
           "Index":30,
-          "Name":"\u0412\u044B\u0431\u043E\u0440",
+          "Name":"Выбор",
           "ParentId":4,
           "TypeId":32,
           "EnumValues":[
              {
-                "Name":"\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
+                "Name":"Не выбрано",
                 "Value":0
              },
              {
-                "Name":"\u0414\u0430",
+                "Name":"Да",
                 "Value":1
              },
              {
-                "Name":"\u041D\u0435\u0442",
+                "Name":"Нет",
                 "Value":2
              }
           ],
@@ -35,7 +35,7 @@
           "Deleted":true,
           "Id":1,
           "Index":31,
-          "Name":"\u0424\u043E\u0440\u043C\u0430 \u0434\u043B\u044F \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u043E\u0432",
+          "Name":"Форма для экспериментов",
           "TypeId":8,
           "ParameterFieldId":null
        },
@@ -44,7 +44,7 @@
           "Deleted":true,
           "Id":2,
           "Index":32,
-          "Name":"\u0410\u0432\u0442\u043E\u0440",
+          "Name":"Автор",
           "ParentId":1,
           "TypeId":14
        },
@@ -53,7 +53,7 @@
           "Deleted":true,
           "Id":3,
           "Index":33,
-          "Name":"\u041E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439",
+          "Name":"Ответственный",
           "ParentId":1,
           "TypeId":16
        },
@@ -76,10 +76,10 @@
           "Id":21,
           "Index":35,
           "IsFormTitle":true,
-          "Name":"\u0414\u0414\u041A \u041A\u0430\u0437\u0430\u043D\u044C?",
+          "Name":"ДДК Казань?",
           "TypeId":1,
-          "NoString":"\u041D\u0435\u0442",
-          "YesString":"\u0414\u0430"
+          "NoString":"Нет",
+          "YesString":"Да"
        },
        {
           "Code":"",
@@ -123,7 +123,7 @@
           "Code":"",
           "Id":4,
           "Index":1,
-          "Name":"\u0414\u0430\u043D\u043D\u044B\u0435 \u043A\u043B\u0438\u0435\u043D\u0442\u0430",
+          "Name":"Данные клиента",
           "TypeId":8,
           "ParameterFieldId":null
        },
@@ -132,7 +132,7 @@
           "Code":"",
           "Id":5,
           "Index":2,
-          "Name":"\u0424\u0430\u043C\u0438\u043B\u0438\u044F",
+          "Name":"Фамилия",
           "ParentId":4,
           "TypeId":0
        },
@@ -141,7 +141,7 @@
           "Code":"",
           "Id":6,
           "Index":3,
-          "Name":"\u0418\u043C\u044F",
+          "Name":"Имя",
           "ParentId":4,
           "TypeId":0
        },
@@ -150,7 +150,7 @@
           "Code":"",
           "Id":7,
           "Index":4,
-          "Name":"\u041E\u0442\u0447\u0435\u0441\u0442\u0432\u043E",
+          "Name":"Отчество",
           "ParentId":4,
           "TypeId":0
        },
@@ -158,16 +158,17 @@
           "Code":"",
           "Id":8,
           "Index":5,
-          "Name":"\u0414\u0430\u0442\u0430 \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F",
+          "Name":"Дата рождения",
           "ParentId":4,
-          "TypeId":7
+          "TypeId":7,
+          "__type":"FormField:#Papirus.Services.JsonClasses"
        },
        {
           "__type":"PhoneFormField:#Papirus.Services.JsonClasses",
           "Code":"",
           "Id":9,
           "Index":6,
-          "Name":"\u041C\u043E\u0431\u0438\u043B\u044C\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D",
+          "Name":"Мобильный телефон",
           "ParentId":4,
           "TypeId":20,
           "DefaultText":"",
@@ -179,7 +180,7 @@
           "Code":"",
           "Id":10,
           "Index":7,
-          "Name":"\u0421\u0442\u0430\u0442\u0443\u0441",
+          "Name":"Статус",
           "ParentId":4,
           "TypeId":5,
           "RootId":712317
@@ -189,33 +190,39 @@
           "Code":"",
           "Id":31,
           "Index":8,
-          "Name":"\u0421\u0442\u0430\u0442\u0443\u0441 \u0432\u044B\u0431\u043E\u0440",
+          "Name":"Статус выбор",
           "ParentId":4,
           "TypeId":32,
           "EnumValues":[
              {
-                "Name":"\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
-                "Value":0
+                "Value":0,
+                "Name":"Не выбрано",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0412\u044B\u0434\u0430\u0447\u0430",
-                "Value":1
+                "Value":1,
+                "Name":"Выдача",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041D\u043E\u0432\u044B\u0439",
-                "Value":2
+                "Value":2,
+                "Name":"Новый",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041E\u0434\u043E\u0431\u0440\u0435\u043D",
-                "Value":3
+                "Value":3,
+                "Name":"Одобрен",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041E\u0442\u043A\u0430\u0437",
-                "Value":4
+                "Value":4,
+                "Name":"Отказ",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041F\u0440\u043E\u0434\u0430\u0436\u0430",
-                "Value":5
+                "Value":5,
+                "Name":"Продажа",
+                "IsRemoved":false
              }
           ],
           "LargeView":false
@@ -225,25 +232,29 @@
           "Code":"",
           "Id":38,
           "Index":9,
-          "Name":"\u0422\u0435\u0441\u0442\u043E\u0432\u044B\u0439 \u0432\u044B\u0431\u043E\u0440",
+          "Name":"Тестовый выбор",
           "ParentId":4,
           "TypeId":32,
           "EnumValues":[
              {
-                "Name":"\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
-                "Value":0
+                "Value":0,
+                "Name":"Не выбрано",
+                "IsRemoved":false
              },
              {
-                "Name":" \u0410\u0423\u041F \u041C\u0424",
-                "Value":1
+                "Value":1,
+                "Name":" АУП МФ",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0410\u0423\u041F \u0424\u0438\u043B\u0438\u0430\u043B\u0430 \u0411\u0438\u0437\u043D\u0435\u0441",
-                "Value":2
+                "Value":2,
+                "Name":"АУП Филиала Бизнес",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0410\u0423\u041F \u0426\u0424",
-                "Value":3
+                "Value":3,
+                "Name":"АУП ЦФ",
+                "IsRemoved":false
              }
           ],
           "LargeView":false
@@ -253,7 +264,7 @@
           "Code":"",
           "Id":17,
           "Index":10,
-          "Name":"\u0414\u043E\u0445\u043E\u0434 \u0432 \u043C\u0435\u0441\u044F\u0446",
+          "Name":"Доход в месяц",
           "ParentId":4,
           "TypeId":3
        },
@@ -261,16 +272,17 @@
           "Code":"",
           "Id":18,
           "Index":11,
-          "Name":"\u0412\u0440\u0435\u043C\u044F",
+          "Name":"Время",
           "ParentId":4,
-          "TypeId":17
+          "TypeId":17,
+          "__type":"FormField:#Papirus.Services.JsonClasses"
        },
        {
           "__type":"TitleFormField:#Papirus.Services.JsonClasses",
           "Code":"",
           "Id":11,
           "Index":12,
-          "Name":"\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B",
+          "Name":"Документы",
           "TypeId":8,
           "ParameterFieldId":null
        },
@@ -279,7 +291,7 @@
           "Code":"",
           "Id":12,
           "Index":13,
-          "Name":"\u0421\u0430\u0440\u0438\u044F \u043F\u0430\u0441\u043F\u043E\u0440\u0442\u0430",
+          "Name":"Сария паспорта",
           "ParentId":11,
           "TypeId":0,
           "Mask":"00:00"
@@ -289,7 +301,7 @@
           "Code":"",
           "Id":13,
           "Index":14,
-          "Name":"\u041D\u043E\u043C\u0435\u0440 \u043F\u0430\u0441\u043F\u043E\u0440\u0442\u0430",
+          "Name":"Номер паспорта",
           "ParentId":11,
           "TypeId":0
        },
@@ -298,7 +310,7 @@
           "Code":"",
           "Id":14,
           "Index":15,
-          "Name":"\u041F\u0440\u043E\u0434\u0443\u043A\u0442",
+          "Name":"Продукт",
           "TypeId":8,
           "VisibilityCondition":{
              "CatalogColumn":0,
@@ -318,7 +330,7 @@
           "Code":"",
           "Id":15,
           "Index":16,
-          "Name":"\u0416\u0435\u043B\u0430\u0435\u043C\u044B\u0439 \u043F\u0440\u043E\u0434\u0443\u043A\u0442",
+          "Name":"Желаемый продукт",
           "ParentId":14,
           "TypeId":5,
           "RootId":712323
@@ -328,7 +340,7 @@
           "Code":"",
           "Id":16,
           "Index":17,
-          "Name":"\u0421\u0443\u043C\u043C\u0430",
+          "Name":"Сумма",
           "ParentId":14,
           "TypeId":3
        },
@@ -337,7 +349,7 @@
           "Code":"",
           "Id":22,
           "Index":18,
-          "Name":"\u041B\u0430\u0442\u0435\u0445",
+          "Name":"Латех",
           "TypeId":8,
           "IsATable":true,
           "ParameterFieldId":null
@@ -347,7 +359,7 @@
           "Code":"",
           "Id":25,
           "Index":19,
-          "Name":"\u0421\u0442\u0430\u0440\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442",
+          "Name":"Старый кредит",
           "ParentId":22,
           "TypeId":5,
           "RootId":913017
@@ -357,7 +369,7 @@
           "Code":"",
           "Id":23,
           "Index":20,
-          "Name":"\u041A\u0440\u0435\u0434\u0438\u0442",
+          "Name":"Кредит",
           "ParentId":22,
           "SameRowAsPrevious":false,
           "TypeId":32,
@@ -374,20 +386,24 @@
           },
           "EnumValues":[
              {
-                "Name":"\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
-                "Value":0
+                "Value":0,
+                "Name":"Не выбрано",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041D\u0435 \u043A\u0440\u0435\u0434\u0438\u0442",
-                "Value":1
+                "Value":1,
+                "Name":"Не кредит",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0414\u0430 \u043A\u0440\u0435\u0434\u0438\u0442",
-                "Value":2
+                "Value":2,
+                "Name":"Да кредит",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041E\u0430\u043E\u0430\u043E\u0430\u043E\u0430\u0430\u043E\u0430\u043E\u0430",
-                "Value":3
+                "Value":3,
+                "Name":"Оаоаоаоааоао",
+                "IsRemoved":false
              }
           ],
           "LargeView":false
@@ -397,7 +413,7 @@
           "Code":"",
           "Id":33,
           "Index":21,
-          "Name":"\u0421\u043F\u0438\u0441\u043E\u043A",
+          "Name":"Список",
           "ParentId":22,
           "TypeId":5,
           "RootId":913102
@@ -407,7 +423,7 @@
           "Code":"",
           "Id":32,
           "Index":22,
-          "Name":"\u0415\u0449\u0435 \u043E\u0434\u0438\u043D \u0432\u044B\u0431\u043E\u0440",
+          "Name":"Еще один выбор",
           "ParentId":22,
           "SameRowAsPrevious":false,
           "TypeId":32,
@@ -424,20 +440,24 @@
           },
           "EnumValues":[
              {
-                "Name":"\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
-                "Value":0
+                "Value":0,
+                "Name":"Не выбрано",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0414\u0430",
-                "Value":1
+                "Value":1,
+                "Name":"Да",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041D\u0435\u0442",
-                "Value":2
+                "Value":2,
+                "Name":"Нет",
+                "IsRemoved":false
              },
              {
-                "Name":"\u041D\u0435 \u0437\u043D\u0430\u044E",
-                "Value":3
+                "Value":3,
+                "Name":"Не знаю",
+                "IsRemoved":false
              }
           ],
           "LargeView":false
@@ -447,7 +467,7 @@
           "Code":"",
           "Id":26,
           "Index":23,
-          "Name":"\u0418\u0422 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438",
+          "Name":"ИТ компании",
           "TypeId":8,
           "IsATable":true,
           "ParameterFieldId":null,
@@ -458,7 +478,7 @@
           "Code":"",
           "Id":27,
           "Index":24,
-          "Name":"\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435",
+          "Name":"Название",
           "ParentId":26,
           "TypeId":5,
           "RootId":913059
@@ -468,7 +488,7 @@
           "Code":"",
           "Id":28,
           "Index":25,
-          "Name":"\u0422\u0435\u043B\u0435\u0444\u043E\u043D",
+          "Name":"Телефон",
           "ParentId":26,
           "TypeId":20,
           "DefaultText":"",
@@ -480,7 +500,7 @@
           "Code":"",
           "Id":29,
           "Index":26,
-          "Name":"\u0412\u044B\u0431\u043E\u0440",
+          "Name":"Выбор",
           "ParentId":26,
           "SameRowAsPrevious":false,
           "TypeId":32,
@@ -497,20 +517,34 @@
           },
           "EnumValues":[
              {
-                "Name":"\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
-                "Value":0
+                "Value":0,
+                "Name":"Не выбрано",
+                "IsRemoved":false
              },
              {
+                "Value":1,
                 "Name":"Microsoft",
-                "Value":1
+                "IsRemoved":false
              },
              {
+                "Value":2,
                 "Name":"Netflix",
-                "Value":2
+                "IsRemoved":false
              },
              {
+                "Value":3,
                 "Name":"Telegram LLC",
-                "Value":3
+                "IsRemoved":false
+             },
+             {
+                "Value":4,
+                "Name":"ICQ",
+                "IsRemoved":false
+             },
+             {
+                 "Value": 5,
+                 "Name": "Sber",
+                 "IsRemoved":false
              }
           ],
           "LargeView":false
@@ -520,7 +554,7 @@
           "Code":"",
           "Id":36,
           "Index":27,
-          "Name":"\u0413\u043E\u0440\u043E\u0434",
+          "Name":"Город",
           "ParentId":26,
           "TypeId":5,
           "RootId":913276
@@ -530,7 +564,7 @@
           "Code":"",
           "Id":34,
           "Index":28,
-          "Name":"\u0413\u043E\u0440\u043E\u0434",
+          "Name":"Город",
           "ParentId":26,
           "SameRowAsPrevious":false,
           "TypeId":32,
@@ -547,20 +581,24 @@
           },
           "EnumValues":[
              {
-                "Name":"\u041D\u0435 \u0432\u044B\u0431\u0440\u0430\u043D\u043E",
-                "Value":0
+                "Value":0,
+                "Name":"Не выбрано",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0412\u0430\u043D\u043A\u0443\u0432\u0435\u0440",
-                "Value":1
+                "Value":1,
+                "Name":"Ванкувер",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0412\u0430\u0448\u0438\u043D\u0433\u0442\u043E\u043D",
-                "Value":2
+                "Value":2,
+                "Name":"Вашингтон",
+                "IsRemoved":false
              },
              {
-                "Name":"\u0421\u0438\u044D\u0442\u043B",
-                "Value":3
+                "Value":3,
+                "Name":"Сиэтл",
+                "IsRemoved":false
              }
           ],
           "LargeView":false
@@ -570,7 +608,8 @@
           "Id":37,
           "Index":29,
           "Name":"divider",
-          "TypeId":31
+          "TypeId":31,
+          "__type":"FormField:#Papirus.Services.JsonClasses"
        }
     ],
     "HelpDeskSettings":{
@@ -578,10 +617,10 @@
     },
     "Id":712314,
     "Name":"experimantal_form",
-    "ObjectVersion":909862274,
+    "ObjectVersion":909985069,
     "OrganizationId":1128,
-    "OrganizationName":"\u0421\u043E\u0432\u041A\u043E\u043C\u0411\u0430\u043D\u043A",
+    "OrganizationName":"СовКомБанк",
     "RegisterExportAllowedUserIds":[
        
     ]
- }
+ },
