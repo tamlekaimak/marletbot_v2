@@ -9,7 +9,7 @@
          "Code":"",
          "Deleted":true,
          "Id":19,
-         "Index":32,
+         "Index":30,
          "Name":"Выбор",
          "ParentId":4,
          "TypeId":32,
@@ -34,16 +34,16 @@
          "Code":"",
          "Deleted":true,
          "Id":1,
-         "Index":33,
+         "Index":31,
          "Name":"Форма для экспериментов",
          "TypeId":8,
-         "ParameterFieldId":"None"
+         "ParameterFieldId":null
       },
       {
          "Code":"",
          "Deleted":true,
          "Id":2,
-         "Index":34,
+         "Index":32,
          "Name":"Автор",
          "ParentId":1,
          "TypeId":14
@@ -52,7 +52,7 @@
          "Code":"",
          "Deleted":true,
          "Id":3,
-         "Index":35,
+         "Index":33,
          "Name":"Ответственный",
          "ParentId":1,
          "TypeId":16
@@ -61,7 +61,7 @@
          "Code":"",
          "Deleted":true,
          "Id":24,
-         "Index":36,
+         "Index":34,
          "Name":"divider",
          "TypeId":31
       },
@@ -74,7 +74,7 @@
          },
          "Deleted":true,
          "Id":21,
-         "Index":37,
+         "Index":35,
          "IsFormTitle":true,
          "Name":"ДДК Казань?",
          "TypeId":1,
@@ -85,7 +85,7 @@
          "Code":"",
          "Deleted":true,
          "Id":20,
-         "Index":38,
+         "Index":36,
          "Name":"divider",
          "TypeId":31
       },
@@ -93,7 +93,7 @@
          "Code":"",
          "Deleted":true,
          "Id":30,
-         "Index":39,
+         "Index":37,
          "Name":"divider",
          "TypeId":31
       },
@@ -101,15 +101,7 @@
          "Code":"",
          "Deleted":true,
          "Id":35,
-         "Index":40,
-         "Name":"divider",
-         "TypeId":31
-      },
-      {
-         "Code":"",
-         "Deleted":true,
-         "Id":37,
-         "Index":41,
+         "Index":38,
          "Name":"divider",
          "TypeId":31
       }
@@ -133,7 +125,7 @@
          "Index":1,
          "Name":"Данные клиента",
          "TypeId":8,
-         "ParameterFieldId":"None"
+         "ParameterFieldId":null
       },
       {
          "__type":"TextFormField:#Papirus.Services.JsonClasses",
@@ -168,7 +160,8 @@
          "Index":5,
          "Name":"Дата рождения",
          "ParentId":4,
-         "TypeId":7
+         "TypeId":7,
+         "__type":"FormField:#Papirus.Services.JsonClasses"
       },
       {
          "__type":"PhoneFormField:#Papirus.Services.JsonClasses",
@@ -202,28 +195,34 @@
          "TypeId":32,
          "EnumValues":[
             {
+               "Value":0,
                "Name":"Не выбрано",
-               "Value":0
+               "IsRemoved":false
             },
             {
+               "Value":1,
                "Name":"Выдача",
-               "Value":1
+               "IsRemoved":false
             },
             {
+               "Value":2,
                "Name":"Новый",
-               "Value":2
+               "IsRemoved":false
             },
             {
+               "Value":3,
                "Name":"Одобрен",
-               "Value":3
+               "IsRemoved":false
             },
             {
+               "Value":4,
                "Name":"Отказ",
-               "Value":4
+               "IsRemoved":false
             },
             {
+               "Value":5,
                "Name":"Продажа",
-               "Value":5
+               "IsRemoved":false
             }
          ],
          "LargeView":false
@@ -238,20 +237,24 @@
          "TypeId":32,
          "EnumValues":[
             {
+               "Value":0,
                "Name":"Не выбрано",
-               "Value":0
+               "IsRemoved":false
             },
             {
+               "Value":1,
                "Name":" АУП МФ",
-               "Value":1
+               "IsRemoved":false
             },
             {
+               "Value":2,
                "Name":"АУП Филиала Бизнес",
-               "Value":2
+               "IsRemoved":false
             },
             {
+               "Value":3,
                "Name":"АУП ЦФ",
-               "Value":3
+               "IsRemoved":false
             }
          ],
          "LargeView":false
@@ -271,7 +274,8 @@
          "Index":11,
          "Name":"Время",
          "ParentId":4,
-         "TypeId":17
+         "TypeId":17,
+         "__type":"FormField:#Papirus.Services.JsonClasses"
       },
       {
          "__type":"TitleFormField:#Papirus.Services.JsonClasses",
@@ -280,7 +284,7 @@
          "Index":12,
          "Name":"Документы",
          "TypeId":8,
-         "ParameterFieldId":"None"
+         "ParameterFieldId":null
       },
       {
          "__type":"TextFormField:#Papirus.Services.JsonClasses",
@@ -310,16 +314,16 @@
          "TypeId":8,
          "VisibilityCondition":{
             "CatalogColumn":0,
-            "CatalogColumnName":"None",
-            "CatalogValues":"None",
+            "CatalogColumnName":null,
+            "CatalogValues":null,
             "Childrens":[
                
             ],
-            "FieldId":"None",
+            "FieldId":null,
             "Type":11,
-            "Value":"None"
+            "Value":null
          },
-         "ParameterFieldId":"None"
+         "ParameterFieldId":null
       },
       {
          "__type":"ProjectFormField:#Papirus.Services.JsonClasses",
@@ -348,7 +352,7 @@
          "Name":"Латех",
          "TypeId":8,
          "IsATable":true,
-         "ParameterFieldId":"None"
+         "ParameterFieldId":null
       },
       {
          "__type":"ProjectFormField:#Papirus.Services.JsonClasses",
@@ -371,31 +375,35 @@
          "TypeId":32,
          "VisibilityCondition":{
             "CatalogColumn":0,
-            "CatalogColumnName":"None",
-            "CatalogValues":"None",
+            "CatalogColumnName":null,
+            "CatalogValues":null,
             "Childrens":[
                
             ],
-            "FieldId":"None",
+            "FieldId":null,
             "Type":11,
-            "Value":"None"
+            "Value":null
          },
          "EnumValues":[
             {
+               "Value":0,
                "Name":"Не выбрано",
-               "Value":0
+               "IsRemoved":false
             },
             {
+               "Value":1,
                "Name":"Не кредит",
-               "Value":1
+               "IsRemoved":false
             },
             {
+               "Value":2,
                "Name":"Да кредит",
-               "Value":2
+               "IsRemoved":false
             },
             {
+               "Value":3,
                "Name":"Оаоаоаоааоао",
-               "Value":3
+               "IsRemoved":false
             }
          ],
          "LargeView":false
@@ -421,39 +429,35 @@
          "TypeId":32,
          "VisibilityCondition":{
             "CatalogColumn":0,
-            "CatalogColumnName":"None",
-            "CatalogValues":"None",
+            "CatalogColumnName":null,
+            "CatalogValues":null,
             "Childrens":[
                
             ],
-            "FieldId":"None",
+            "FieldId":null,
             "Type":11,
-            "Value":"None"
+            "Value":null
          },
          "EnumValues":[
             {
+               "Value":0,
                "Name":"Не выбрано",
-               "Value":0
+               "IsRemoved":false
             },
             {
+               "Value":1,
                "Name":"Да",
-               "Value":1
+               "IsRemoved":false
             },
             {
+               "Value":2,
                "Name":"Нет",
-               "Value":2
+               "IsRemoved":false
             },
             {
+               "Value":3,
                "Name":"Не знаю",
-               "Value":3
-            },
-            {
-               "Name":"Знаю",
-               "Value":4
-            },
-            {
-               "Name":"tot",
-               "Value":5
+               "IsRemoved":false
             }
          ],
          "LargeView":false
@@ -466,7 +470,7 @@
          "Name":"ИТ компании",
          "TypeId":8,
          "IsATable":true,
-         "ParameterFieldId":"None",
+         "ParameterFieldId":null,
          "ShowRowNumber":true
       },
       {
@@ -502,43 +506,45 @@
          "TypeId":32,
          "VisibilityCondition":{
             "CatalogColumn":0,
-            "CatalogColumnName":"None",
-            "CatalogValues":"None",
+            "CatalogColumnName":null,
+            "CatalogValues":null,
             "Childrens":[
                
             ],
-            "FieldId":"None",
+            "FieldId":null,
             "Type":11,
-            "Value":"None"
+            "Value":null
          },
          "EnumValues":[
             {
+               "Value":0,
                "Name":"Не выбрано",
-               "Value":0
+               "IsRemoved":false
             },
             {
+               "Value":1,
                "Name":"Microsoft",
-               "Value":1
+               "IsRemoved":false
             },
             {
+               "Value":2,
                "Name":"Netflix",
-               "Value":2
+               "IsRemoved":false
             },
             {
+               "Value":3,
                "Name":"Telegram LLC",
-               "Value":3
+               "IsRemoved":false
             },
             {
+               "Value":4,
                "Name":"ICQ",
-               "Value":4
+               "IsRemoved":false
             },
             {
+               "Value":5,
                "Name":"Sber",
-               "Value":5
-            },
-            {
-               "Name":"CS GO",
-               "Value":6
+               "IsRemoved":false
             }
          ],
          "LargeView":false
@@ -564,79 +570,46 @@
          "TypeId":32,
          "VisibilityCondition":{
             "CatalogColumn":0,
-            "CatalogColumnName":"None",
-            "CatalogValues":"None",
+            "CatalogColumnName":null,
+            "CatalogValues":null,
             "Childrens":[
                
             ],
-            "FieldId":"None",
+            "FieldId":null,
             "Type":11,
-            "Value":"None"
+            "Value":null
          },
          "EnumValues":[
             {
+               "Value":0,
                "Name":"Не выбрано",
-               "Value":0
+               "IsRemoved":false
             },
             {
+               "Value":1,
                "Name":"Ванкувер",
-               "Value":1
+               "IsRemoved":false
             },
             {
+               "Value":2,
                "Name":"Вашингтон",
-               "Value":2
+               "IsRemoved":false
             },
             {
+               "Value":3,
                "Name":"Сиэтл",
-               "Value":3
+               "IsRemoved":false
             }
          ],
          "LargeView":false
       },
       {
-         "__type":"ProjectFormField:#Papirus.Services.JsonClasses",
          "Code":"",
-         "Id":39,
+         "Id":37,
          "Index":29,
-         "Name":"Мульти список",
-         "TypeId":5,
-         "MultipleChoice":true,
-         "RootId":914162
-      },
-      {
-         "__type":"RadioButtonFormField:#Papirus.Services.JsonClasses",
-         "Code":"",
-         "Id":40,
-         "Index":30,
-         "Name":"Мульти выбор",
-         "TypeId":32,
-         "DisplayAs":3,
-         "EnumValues":[
-            {
-               "Name":"Не выбрано",
-               "Value":0
-            },
-            {
-               "Name":"Татарстан",
-               "Value":1
-            },
-            {
-               "Name":"Московская область",
-               "Value":2
-            },
-            {
-               "Name":"Алтайский край",
-               "Value":3
-            }
-         ],
-         "LargeView":false
-      },
-      {
-         "Code":"",
-         "Id":41,
-         "Index":31,
          "Name":"divider",
-         "TypeId":31
+         "TypeId":31,
+         "__type":"FormField:#Papirus.Services.JsonClasses"
       }
    ],
    "HelpDeskSettings":{
@@ -644,10 +617,10 @@
    },
    "Id":712314,
    "Name":"experimantal_form",
-   "ObjectVersion":910940640,
+   "ObjectVersion":909985069,
    "OrganizationId":1128,
    "OrganizationName":"СовКомБанк",
    "RegisterExportAllowedUserIds":[
       
    ]
-}
+},
